@@ -1,0 +1,13 @@
+#cloud-config
+autoinstall:
+  version: 1
+
+  locale: "en_GB.UTF-8"
+  timezone: "Europe/Warsaw"
+
+  network:
+    version: 2
+    ethernets:
+      enp3s0f0:
+        dhcp4: true
+        dhcp6: true
